@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <body style="user-select: none;">
+            <h1>Calculadora</h1>
+            <div class="calculadora">
+                
+                <div class="container">
+                    <input type="text" id="resultado" placeholder="0" disabled="disabled"/>
+
+                    <div class="col">
+                        <div clas="row">
+                            <button onclick="itemAdd('acao','C')" type="button" class="btn lg">C</button>
+                            <button onclick="itemAdd('acao','/')" type="button" class="btn">/</button>
+                            <button onclick="itemAdd('acao','*')" type="button" class="btn">X</button>
+                        </div>
+                        <div clas="row">
+                            <button onclick="itemAdd('valor',7)" type="button" class="btn">7</button>
+                            <button onclick="itemAdd('valor',8)" type="button" class="btn">8</button>
+                            <button onclick="itemAdd('valor',9)" type="button" class="btn">9</button>
+                            <button onclick="itemAdd('acao','-')" type="button" class="btn">-</button>
+                        </div>
+                        <div clas="row">
+                            <button onclick="itemAdd('valor',4)" type="button" class="btn">4</button>
+                            <button onclick="itemAdd('valor',5)" type="button" class="btn">5</button>
+                            <button onclick="itemAdd('valor',6)" type="button" class="btn">6</button>
+                            <button onclick="itemAdd('acao','+')" type="button" class="btn">+</button>
+                        </div>
+                        <div clas="row">
+                            <button onclick="itemAdd('valor',1)" type="button" class="btn">1</button>
+                            <button onclick="itemAdd('valor',2)" type="button" class="btn">2</button>
+                            <button onclick="itemAdd('valor',3)" type="button" class="btn">3</button>
+                            <button onclick="itemAdd('acao','=')" type="button" class="btn lh hg">=</button>
+                        </div>
+                        <div clas="row">
+                            <button onclick="itemAdd('valor',0)" type="button" class="btn lg">0</button>
+                            <button onclick="itemAdd('acao','.')" type="button" class="btn">.</button>
+                        </div>
+                    </div><!--col-->
+                </div><!--container-->
+            </div><!--Calculadora-->
+            <script src="functions.js"></script>
+        </body>
+    </head>
+</html>
